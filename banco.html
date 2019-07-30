@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banco</title>
+	<script src="banco.js"></script>
+</head>
+<body>
+	<h1>Banco Esferico</h1>
+	<h2>Saldo en caja de ahorro:</h2>
+
+	<div id="saldoCajaDeAhorro">0</div>
+
+	<button name="DepositarCajaDeAhorro" id="DepositarCajaDeAhorro"
+		 onclick="depositar(cajaDeAhorro,'saldoCajaDeAhorro');">Depositar</button>
+
+	<button name="RetirarCajaDeAhorro" id="RetirarCajaDeAhorro" 
+		onclick="retirar(cajaDeAhorro, 'saldoCajaDeAhorro');">Retirar</button>
+
+
+	<h2>Saldo en cuenta corriente:</h2>
+
+	<div id="saldoCuentaCorriente">0</div>
+
+
+	<button name="DepositarCuentaCorriente" id="DepositarCuentaCorriente" 
+		onclick="depositar(cuentaCorriente,'saldoCuentaCorriente');">Depositar</button>
+
+	<button name="RetirarCuentaCorriente" id="RetirarCuentaCorriente" 
+		onclick="retirar(cuentaCorriente, 'saldoCuentaCorriente');">Retirar</button>
+
+	<br>
+	<br>
+	<br>
+	<div>
+
+		<button name="HistorialCajaAhorro" 
+		onclick="historial(cajaDeAhorro, 'historial')">Mostrar historial Caja De Ahorro</button>	
+
+		<button name="HistorialCuentaCorriente" 
+		onclick="historial(cuentaCorriente, 'historial')">Mostrar historial Cuenta Corriente</button>
+
+		<div>
+			<p id = "historial">
+				
+			</p>
+			
+		</div>
+	</div>
+</body>
+</html>
